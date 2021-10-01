@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_enter"
+        android:text="WELCOME TO CURRENCY CONVERTER"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/ed_inrValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_enter"
+        android:hint="INR Value"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_convert"
+        android:text="CONVERT"
+        android:layout_below="@+id/ed_inrValue"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_usdollar"
+        android:layout_below="@+id/btn_convert"
+        android:textColor="@color/black"
+        android:text="US Dollar"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_britishpound"
+        android:layout_below="@+id/tv_usdollar"
+        android:text="British Pound"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_canadiandollar"
+        android:layout_below="@+id/tv_britishpound"
+        android:textColor="@color/black"
+        android:text="Canadian Dollar"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_japaneseyen"
+        android:layout_below="@+id/tv_canadiandollar"
+        android:textColor="@color/black"
+        android:text="Japanese Yen"
+        android:textSize="20dp"
+        />
+
+
+
+
+</RelativeLayout>
