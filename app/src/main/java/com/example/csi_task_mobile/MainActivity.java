@@ -2,11 +2,13 @@ package com.example.csi_task_mobile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText ed_enterinr;
@@ -32,12 +34,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String getinrvalue=ed_enterinr.getText().toString();
-                int valueofinr=Integer.valueOf(getinrvalue);
+                double valueofinr=Double.valueOf(getinrvalue);
                 tv_usdollar.setText("US Dollar             "+String.format("%.2f",valueofinr*0.0136));
                 tv_britishpound.setText("British Pound      "+String.format("%.2f",valueofinr*0.2139));//can use Double.toString(valueofinr*0.2139)
                 tv_canadiandollar.setText("Canadian Dollar  "+String.format("%.2f",valueofinr*0.0172));
                 tv_japaneseyen.setText("Japanese Yen     "+String.format("%.2f",valueofinr*1.4928));
-
 
 
             }
